@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BusVoyageTickets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
       rel="stylesheet"
@@ -17,13 +23,102 @@
             colors: {
               clifford: "#da373d",
             },
+            fontFamily: {
+              raleway: ["Raleway", "sans-serif"],
+            },
           },
         },
       };
     </script>
   </head>
-  <body>
-    <header></header>
+  <body class="font-raleway">
+    <header>
+      <!-- nav section -->
+      <section class="container mx-auto py-2 p-0 mt-0 w-full">
+        <div class="navbar bg-base-100 font-bold">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-lg dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <a
+              class="btn btn-ghost text-3xl lg:text-4xl text-[#131318] font-extrabold"
+              >P-Ticket</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex font-bold pt-3">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-lg">Home</a></li>
+              <li><a class="text-lg">About</a></li>
+              <li><a class="text-lg">Destination</a></li>
+              <li><a class="text-lg">Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="btn font-bold bg-[#1DD1001A] text-[#1DD100] hover:bg-[#aef4a9] lg:text-xl lg:h-14 lg:w-36 border-1 border-solid border-[#1dd10066]"
+              >Bus <img src="./images/tabler-icon-bus.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- banner section -->
+
+      <section class="container mx-auto mt-7 w-full">
+        <div
+          class="bg-contain bg-no-repeat h-screen"
+          style="background-image: url('./images/banner.png')"
+        >
+          <div class="flex flex-col items-center justify-center pt-32 gap-6">
+            <h1
+              class="text-[#FFFFFF] text-7xl font-extrabold flex flex-col items-center justify-center gap-6"
+            >
+              End-to-End Travel with<br />
+              <span class="text-[#1DD100]">P Paribahan</span>
+            </h1>
+            <div class="flex flex-col items-center justify-center">
+              <p class="text-[#FFFFFF] text-lg font-normal">
+                Yes, you can run unit tests and view the results directly within
+                the app. The
+              </p>
+              <p class="text-[#FFFFFF] text-lg font-normal">
+                integrated testing features allow for a streamlined .
+              </p>
+            </div>
+
+            <button
+              class="btn btn-lg border-0 bg-[#1DD100] text-black px-8 text-2xl font-bold"
+            >
+              Buy Tickets
+            </button>
+          </div>
+        </div>
+      </section>
+    </header>
     <main></main>
     <footer></footer>
   </body>
