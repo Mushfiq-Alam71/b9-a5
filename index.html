@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -25,13 +25,14 @@
             },
             fontFamily: {
               raleway: ["Raleway", "sans-serif"],
+              inter: ["Inter", "sans-serif"],
             },
           },
         },
       };
     </script>
   </head>
-  <body class="font-raleway">
+  <body class="">
     <header>
       <!-- nav section -->
       <section class="container mx-auto py-2 p-0 mt-0 w-full">
@@ -87,7 +88,6 @@
       </section>
 
       <!-- banner section -->
-
       <section class="container mx-auto mt-7 w-full">
         <div
           class="bg-contain bg-no-repeat h-screen"
@@ -115,11 +115,111 @@
             >
               Buy Tickets
             </button>
+            <div class="flex flex-row gap-12 absolute bottom-4">
+              <div
+                class="bg-white flex flex-row items-center gap-6 w-[308px] h-[138px] rounded-3xl border-b-[3px] border-solid border-[#1DD100]"
+              >
+                <div>
+                  <img class="pl-7" src="./images/people.png" alt="" />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h1 class="text-4xl text-[#030712] font-bold">500K+</h1>
+                  <p
+                    class="font-normal text-lg text-[#03071299] text-opacity-{0.5}"
+                  >
+                    Registered users
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-white flex flex-row items-center gap-6 w-[308px] h-[138px] rounded-3xl border-b-[3px] border-solid border-[#1DD100]"
+              >
+                <div>
+                  <img class="pl-7" src="./images/ticket-cupon.png" alt="" />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h1 class="text-4xl text-[#030712] font-bold">1.7 lacks</h1>
+                  <p
+                    class="font-normal text-lg text-[#03071299] text-opacity-{0.5}"
+                  >
+                    Tickets Sold
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-white flex flex-row items-center gap-6 w-[308px] h-[138px] rounded-3xl border-b-[3px] border-solid border-[#1DD100]"
+              >
+                <div>
+                  <img class="pl-7" src="./images/stoppage.png" alt="" />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h1 class="text-4xl text-[#030712] font-bold">500K+</h1>
+                  <p
+                    class="font-normal text-lg text-[#03071299] text-opacity-{0.5}"
+                  >
+                    Rental Partners
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </header>
-    <main></main>
+    <main>
+      <!-- offer section -->
+      <section class="container mx-auto w-full">
+        <div class="pb-20">
+          <h1 class="text-5xl font-bold text-center">Best offers for you</h1>
+        </div>
+        <div class="flex flex-row gap-10">
+          <div
+            class="flex flex-row bg-[#FFBF0F] w-[744px] h-[270px] rounded-3xl"
+          >
+            <div class="flex flex-col justify-center pl-20">
+              <div class="flex flex-col gap-2">
+                <h1 class="text-5xl font-black">15% OFF</h1>
+                <p class="text-2xl font-semibold opacity-80">
+                  on your next purchase
+                </p>
+                <p class="text-xl font-medium opacity-50">
+                  use by January 2024
+                </p>
+              </div>
+            </div>
+            <div class="pl-20">
+              <img class="h-full" src="./images/cupon-devider.png" alt="" />
+            </div>
+            <div class="flex flex-col items-center justify-center pl-8 gap-4">
+              <h1 class="text-5xl font-black">NEW15</h1>
+              <p class="text-xl font-medium opacity-50">Coupon Code</p>
+            </div>
+          </div>
+          <div
+            class="flex flex-row bg-[#F78C9C] w-[744px] h-[270px] rounded-3xl"
+          >
+            <div class="flex flex-col justify-center pl-20">
+              <div class="flex flex-col gap-2">
+                <h1 class="text-5xl font-black">20% OFF</h1>
+                <p class="text-2xl font-semibold opacity-80">
+                  on your next purchase
+                </p>
+                <p class="text-xl font-medium opacity-50">
+                  use by January 2024
+                </p>
+              </div>
+            </div>
+            <div class="pl-20">
+              <img class="h-full" src="./images/cupon-devider.png" alt="" />
+            </div>
+            <div class="flex flex-col items-center justify-center pl-8 gap-4">
+              <h1 class="text-5xl font-black">Couple20</h1>
+              <p class="text-xl font-medium opacity-50">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
