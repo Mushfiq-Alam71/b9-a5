@@ -325,15 +325,155 @@
             </div>
           </div>
 
-          <!-- seat -->
-          <div>
+          <!-- seat selection and calculation -->
+          <div
+            class="container mx-auto mt-7 w-full bg-white p-8 rounded-3xl flex flex-row gap-10"
+          >
             <!-- leftSide -->
-            <div>
-              <div></div>
+            <div class="w-1/2">
+              <div
+                class="font-semibold text-2xl border-b-[2px] border-[#03071233] border-dashed pb-6"
+              >
+                Select Your Seat
+              </div>
+              <div
+                class="border-b-[2px] border-[#03071233] border-dashed flex flex-row justify-between pt-5 pb-5"
+              >
+                <div class="flex flex-row text-lg font-medium opacity-80">
+                  <img src="./images/seat-gray.png" alt="" /> Available
+                </div>
+                <div class="flex flex-row text-lg font-medium opacity-80">
+                  <img src="./images/seat-green-filled.png" alt="" /> Selected
+                </div>
+              </div>
+              <div class="flex justify-end pt-5 pb-5">
+                <button
+                  class="w-[110px] h-[56px] bg-[#0307121A] rounded-xl flex justify-center items-center"
+                >
+                  <img src="./images/wheel.svg" alt=" " />
+                </button>
+              </div>
+              <!-- seats row-column -->
+              <div class="flex flex-col gap-8">
+                <!-- A -->
+                <div class="flex flex-row justify-between">
+                  <div
+                    class="font-medium text-xl opacity-50 flex items-center justify-center pr-4"
+                  >
+                    A
+                  </div>
+                  <div class="flex gap-28">
+                    <div class="flex gap-6">
+                      <div
+                        class="btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
+                      >
+                        A1
+                      </div>
+                      <div
+                        class="btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
+                      >
+                        A2
+                      </div>
+                    </div>
+                    <div class="flex gap-6">
+                      <div
+                        class="btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
+                      >
+                        A3
+                      </div>
+                      <div
+                        class="btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
+                      >
+                        A4
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- B -->
+                <div class="flex flex-row justify-between">
+                  <div
+                    class="font-medium text-xl opacity-50 flex items-center justify-center pr-4"
+                  >
+                    B
+                  </div>
+                  <div class="flex gap-28">
+                    <div class="flex gap-6">
+                      <div
+                        class="btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
+                      >
+                        B1
+                      </div>
+                      <div
+                        class="btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
+                      >
+                        B2
+                      </div>
+                    </div>
+                    <div class="flex gap-6">
+                      <div
+                        class="btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
+                      >
+                        B3
+                      </div>
+                      <div
+                        class="btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
+                      >
+                        B4
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <!-- rightSide -->
-            <div></div>
+            <div class="w-1/2">
+              <div
+                class="font-semibold text-2xl border-b-[2px] border-[#03071233] border-dashed pb-6"
+              >
+                Select Your Seat
+              </div>
+
+              <!-- cart -->
+              <div
+                class="bg-[#F7F8F8] flex flex-col justify-between rounded-3xl mt-5"
+              >
+                <div class="p-8">
+                  <div
+                    class="flex flex-row justify-between border-b-[2px] border-[#03071233] border-dashed"
+                  >
+                    <div class="text-base font-medium">Seat</div>
+                    <div class="text-base font-medium">Class</div>
+                    <div class="text-base font-medium">Price</div>
+                  </div>
+
+                  <div
+                    class="border-b-[2px] border-[#03071233] border-solid pt-6"
+                  ></div>
+
+                  <div class="flex flex-row justify-between">
+                    <div class="text-base font-medium">Total</div>
+                    <div class="text-base font-medium">BDT1100</div>
+                  </div>
+                  <div class="my-6">
+                    <input
+                      class="w-full h-12 rounded-xl p-8 focus:outline-none"
+                      type="text"
+                      placeholder="Have any copupon?"
+                    />
+                    <button
+                      class="absolute right-[255px] bottom-[-1985px] btn bg-[#1DD100] text-white text-base font-semibold"
+                    >
+                      Apply
+                    </button>
+                  </div>
+                  <div class="flex flex-row justify-between">
+                    <div class="text-base font-bold">Grand Total</div>
+                    <div class="text-base font-bold">BDT1100</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
