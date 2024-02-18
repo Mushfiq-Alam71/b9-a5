@@ -113,7 +113,7 @@
             <button
               class="btn btn-lg border-0 bg-[#1DD100] text-black px-8 text-2xl font-bold"
             >
-              Buy Tickets
+              <a href="#buy-ticket">Buy Ticket</a>
             </button>
             <div class="flex flex-row gap-12 absolute bottom-4">
               <div
@@ -229,7 +229,7 @@
       </section>
 
       <!-- ticket purchase section -->
-      <section class="mt-24">
+      <section class="mt-24" id="buy-ticket">
         <div
           class="bg-[#F7F8F8] border-t-4 border-[#1DD100]"
           style="border-radius: 88px 88px 0px 0px"
@@ -265,7 +265,11 @@
                 <div class="flex items-center">
                   <a
                     class="flex flex-row justify-between btn font-bold bg-[#1DD1001A] text-[#1DD100] hover:bg-[#aef4a9] text-xl h-14 border-1 border-solid border-[#1dd10066]"
-                    ><img src="./images/seat-green.png" alt="" />8 Seats left</a
+                    ><img src="./images/seat-green.png" alt="" /><span
+                      id="availableSeat"
+                      >8</span
+                    >
+                    Seats left</a
                   >
                 </div>
               </div>
@@ -364,24 +368,24 @@
                   <div class="flex gap-28">
                     <div class="flex gap-6">
                       <div
-                        class="btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
+                        class="busSeat btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
                       >
                         A1
                       </div>
                       <div
-                        class="btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
+                        class="busSeat btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
                       >
                         A2
                       </div>
                     </div>
                     <div class="flex gap-6">
                       <div
-                        class="btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
+                        class="busSeat btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
                       >
                         A3
                       </div>
                       <div
-                        class="btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
+                        class="busSeat btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
                       >
                         A4
                       </div>
@@ -398,24 +402,24 @@
                   <div class="flex gap-28">
                     <div class="flex gap-6">
                       <div
-                        class="btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
+                        class="busSeat btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
                       >
                         B1
                       </div>
                       <div
-                        class="btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
+                        class="busSeat btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
                       >
                         B2
                       </div>
                     </div>
                     <div class="flex gap-6">
                       <div
-                        class="btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
+                        class="busSeat btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
                       >
                         B3
                       </div>
                       <div
-                        class="btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
+                        class="busSeat btn flex justify-center items-center rounded-xl font-medium text-xl opacity-50 bg-[#F7F8F8] w-[110px] h-[56px]"
                       >
                         B4
                       </div>
@@ -438,37 +442,56 @@
                 class="bg-[#F7F8F8] flex flex-col justify-between rounded-3xl mt-5"
               >
                 <div class="p-8">
-                  <div
-                    class="flex flex-row justify-between border-b-[2px] border-[#03071233] border-dashed"
-                  >
-                    <div class="text-base font-medium">Seat</div>
-                    <div class="text-base font-medium">Class</div>
-                    <div class="text-base font-medium">Price</div>
+                  <div>
+                    <div
+                      class="flex flex-row justify-between border-b-[2px] border-[#03071233] border-dashed"
+                    >
+                      <div class="text-base font-medium">
+                        Seat
+                        <span
+                          id="seat-count-number"
+                          class="px-2 rounded-full text-white bg-[#1DD100]"
+                        ></span>
+                      </div>
+                      <div class="text-base font-medium">Class</div>
+                      <div class="text-base font-medium">Price</div>
+                    </div>
+                    <div class="flex flex-row justify-between pb-4">
+                      <div class="text-base font-medium" id="seat-number"></div>
+                      <div class="text-base font-medium" id="seat-class"></div>
+                      <div class="text-base font-medium" id="seat-price"></div>
+                    </div>
                   </div>
 
                   <div
-                    class="border-b-[2px] border-[#03071233] border-solid pt-6"
+                    class="border-b-[2px] border-[#03071233] border-solid"
                   ></div>
 
                   <div class="flex flex-row justify-between">
                     <div class="text-base font-medium">Total</div>
-                    <div class="text-base font-medium">BDT1100</div>
+                    <div class="text-base font-medium">
+                      BDT <span id="total-price">0</span>
+                    </div>
                   </div>
-                  <div class="my-6">
+                  <div class="my-6" id="coupon-container">
                     <input
                       class="w-full h-12 rounded-xl p-8 focus:outline-none"
                       type="text"
                       placeholder="Have any copupon?"
+                      id="coupon"
                     />
                     <button
-                      class="absolute right-[255px] bottom-[-1985px] btn bg-[#1DD100] text-white text-base font-semibold"
+                      id="apply"
+                      class="btn bg-[#1DD100] text-white text-base font-semibold"
                     >
                       Apply
                     </button>
                   </div>
                   <div class="flex flex-row justify-between">
                     <div class="text-base font-bold">Grand Total</div>
-                    <div class="text-base font-bold">BDT1100</div>
+                    <div class="text-base font-bold">
+                      BDT <span id="discount-price">0</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -485,5 +508,6 @@
       </section>
     </main>
     <footer></footer>
+    <script src="./script.js"></script>
   </body>
 </html>
