@@ -53,7 +53,7 @@ for (let i = 0; i < seat.length; i++) {
         const seatprice = document.createElement("p");
 
         seatName.innerHTML = seatNumberInnerValue;
-        seatclass.innerHTML = "Economy Class";
+        seatclass.innerHTML = "Economy";
         seatprice.innerHTML = 550;
 
         seatNumber.appendChild(seatName);
@@ -69,7 +69,7 @@ for (let i = 0; i < seat.length; i++) {
 
         busSeatArrangement.push(seat[i].innerText);
       } else {
-        alert("Button clicked!");
+        alert("More than 4 seats can't be selected!");
       }
     }
   });
