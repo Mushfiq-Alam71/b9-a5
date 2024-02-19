@@ -68,6 +68,8 @@ for (let i = 0; i < seat.length; i++) {
         discountPrice.innerHTML = price;
 
         busSeatArrangement.push(seat[i].innerText);
+      } else {
+        alert("Button clicked!");
       }
     }
   });
@@ -85,4 +87,9 @@ apply.addEventListener("click", function () {
     discountPrice.innerHTML = price - price * 0.2;
     couponContainer.style.display = "none";
   }
+});
+
+const closeReset = document.getElementById("close-reset");
+closeReset.addEventListener("click", function () {
+  window.location.reload();
 });
